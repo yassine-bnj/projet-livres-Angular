@@ -1,0 +1,12 @@
+.navbar {
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(74, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+}
+.dropdown-menu{
+    right: 0!important;
+    left: auto!important;
+}
+
+.tableHeader{
+    background: #6c7ae0;
+
+}

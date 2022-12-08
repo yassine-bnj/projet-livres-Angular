@@ -1,0 +1,39 @@
+<div class="container thecontainer" >
+    <div>
+        <h2>Ajouter un Livre :</h2>
+    </div>
+    <form>
+        
+        <div class="col-12 theInput">
+            <label>Titre Livre</label>
+            <input type="text" [(ngModel)]="newLivre.titre" name="titreLivre" class="form-control">
+        </div>
+        <div class="col-12 theInput">
+            <label>Auteur Livre</label>
+            <input type="text" [(ngModel)]="newLivre.auteur" name="prixLivre" class="form-control">
+        </div>
+        <div class="col-12 theInput">
+            <label>Nb Pages Livre</label>
+            <input type="number" [(ngModel)]="newLivre.nbPages" name="nbPagesLivre" class="form-control">
+        </div>
+        <div class="col-12 theInput">
+            <label>Date Parution</label>
+            <input type="date" [(ngModel)]="newLivre.dateParution" name="dateParution" class="form-control">
+        </div>
+        <div class="col-12 theInput">
+            <label>Type</label>
+            <select class="form-control form-control-lg" id="idCat" name="idCat"
+            [(ngModel)]="newIdType">
+             <option *ngFor="let t of types" [value]="t.idType" >
+             {{t.nomType}}
+            </option>
+            </select>
+            </div>
+
+
+        <div class="mt-2">
+            <button type="submit" (click)="addLivre()" class="btn btn-success">Ajouter</button>
+        </div>
+    </form>
+
+</div>
